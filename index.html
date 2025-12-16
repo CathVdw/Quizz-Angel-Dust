@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.12/dist/css/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.12/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.12/dist/js/uikit-icons.min.js"></script>
+
+
+  <!-- Script principal quiz -->
+  <script src="./assets/js/prototype-quizz-v4.js" defer></script>
+
+  <!-- Polices Lobster + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Sass compilé -->
+  <link rel="stylesheet" href="./assets/css/quizz.css">
+
+  <title>Prototype Quiz</title>
+</head>
+
+<body>
+
+  <!-- ÉTAPE 1 : Choix langue (anglais/français) -->
+  <section id="quiz-choice" class="quiz-choice">
+    <div id="en">Anglais</div>
+    <div id="fr">Français</div>
+    <div id="nl">Nederlands</div>
+    <div id="sp">Español</div>
+  </section>
+
+  <!-- ÉTAPE 2.1 : Saisie ville + autocomplétion -->
+  <section id="country-container" class="country-container">
+    <div class="country-grid">
+      <!-- Colonne gauche : illustration -->
+      <div class="country-illustration">
+        <img src="./assets/img/Angel-and-Nuggsie-by-peachykeane.jpg" alt="Illustration ville">
+      </div>
+
+      <!-- Colonne droite : formulaire ville -->
+      <div class="country-content">
+        <!-- Titre dynamique (JS) -->
+        <h2 id="country-title">You live in...</h2>
+
+        <!-- Input ville + bouton check -->
+        <div uk-grid class="country-form-row">
+          <div>
+            <div class="autocomplete">
+              <input class="commune country-input-rounded" id="country-input" type="text" name="maCommune"
+                placeholder="" required oninvalid="this.setCustomValidity('Veuillez compléter le champ.')"
+                oninput="this.setCustomValidity('')">
+            </div>
+          </div>
+          <div>
+            <img src="./assets/img/check-mark.png" alt="Start quiz" id="start-quiz-btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 2.2 : Quiz principal -->
+  <section id="quiz-main-container" class="quizz-container">
+
+    <!-- Barre progression (unique, en haut) -->
+    <div class="progress-section">
+      <div class="progress-full-width">
+        <div id="progressBarContainer">
+          <!-- Barre colorée SEULE (sans texte dedans) -->
+          <div id="progressBar"></div>
+          <!-- Texte en FRÈRE de la barre, pas ENFANT -->
+          <span id="percent" class="percent-default"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grille : illustration (30%) + quiz (70%) -->
+    <div class="quiz-row">
+      <!-- Illustration gauche -->
+      <div id="illus" class="illustration">
+        <img src="./assets/img/Angel-and-Nuggsie-by-peachykeane.jpg" alt="Illustration quiz">
+      </div>
+
+      <!-- Contenu quiz droite -->
+      <div class="quizz">
+        <!-- Zone dynamique : question + réponses cliquables (.choices) -->
+        <section id="quiz-step" class="quiz-step">
+          <!-- JS génère : question-text + .choices + .arrow -->
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 3 : Résultats finaux -->
+  <section id="result-container" class="show-results">
+
+    <!-- Résumé score + ville -->
+    <div id="results-content" class="result">
+      <h2 id="results-title">Quiz Results</h2>
+      <div class="details">
+        <p id="final-score">Final score: </p>
+        <p id="current-country"> </p>
+      </div>
+    </div>
+
+    <!-- Détail questions : réponses NON cliquables (.answers) -->
+    <div class="solution">
+      <div id="results-questions" class="answers"></div>
+    </div>
+
+    <!-- Bouton relancer -->
+    <button id="restart-btn"></button>
+  </section>
+
+</body>
+
+</html>

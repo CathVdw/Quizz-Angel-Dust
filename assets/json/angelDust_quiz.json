@@ -1,0 +1,122 @@
+[
+  {
+    "lang": "fr",
+    "questions": [
+      {
+        "text": "Qui a offert Fat Nuggets à Angel Dust?",
+        "options": ["Charlie", "Valentino", "Husk", "Arakniss"],
+        "correct": 1
+      },
+      {
+        "text": "Angel a une soeur jumelle appelée Molly.",
+        "options": ["Vrai", "Faux"],
+        "correct": 0
+      },
+      {
+        "text": "Quel était le prénom d'Angel Dust quand il était humain?",
+        "options": ["Mario", "Salvatore", "Anthony"],
+        "correct": 2
+      },
+      {
+        "text": "De qui Angel Dust est-il le meilleur ami?",
+        "options": ["Cherri Bomb", "Charlie", "Niffty"],
+        "correct": 0
+      },
+      {
+        "text": "Lequel des Vees n'a jamais été directement en relation avec Angel Dust?",
+        "options": ["Valentino", "Velvette", "Vox"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "questions": [
+      {
+        "text": "Who gave Fat Nuggets to Angel Dust?",
+        "options": ["Charlie", "Valentino", "Husk", "Arakniss"],
+        "correct": 1
+      },
+      {
+        "text": "Angel Dust has a twin sister named Molly.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "What was Angel Dust's first name as a human?",
+        "options": ["Mario", "Salvatore", "Anthony"],
+        "correct": 2
+      },
+      {
+        "text": "Who's Angel Dust's best friend?",
+        "options": ["Cherri Bomb", "Charlie", "Niffty"],
+        "correct": 0
+      },
+      {
+        "text": "Which one of the Vees isn't directly involved with Angel Dust?",
+        "options": ["Valentino", "Velvette", "Vox"],
+        "correct": 1
+      }
+    ]
+  },
+    {
+    "lang": "nl",
+    "questions": [
+      {
+        "text": "Wie heeft Angel Dust Fat Nuggets aangeboden?",
+        "options": ["Charlie", "Valentino", "Husk", "Arakniss"],
+        "correct": 1
+      },
+      {
+        "text": "Angel heeft een tweelingzus genaamd Molly..",
+        "options": ["Waar", "Onwaar"],
+        "correct": 0
+      },
+      {
+        "text": "Wat was de voornaam van Angel Dust toen hij nog een mens was?",
+        "options": ["Mario", "Salvatore", "Anthony"],
+        "correct": 2
+      },
+      {
+        "text": "Wie is Angel Dust's beste vriend?",
+        "options": ["Cherri Bomb", "Charlie", "Niffty"],
+        "correct": 0
+      },
+      {
+        "text": "Welke van de Vees heeft nooit rechtstreeks contact gehad met Angel Dust?",
+        "options": ["Valentino", "Velvette", "Vox"],
+        "correct": 1
+      }
+    ]
+  },
+    {
+    "lang": "sp",
+    "questions": [
+      {
+        "text": "¿Quién le dio Fat Nuggets a Angel Dust?",
+        "options": ["Charlie", "Valentino", "Husk", "Arakniss"],
+        "correct": 1
+      },
+      {
+        "text": "Ángel tiene una hermana gemela llamada Molly.",
+        "options": ["Verdadero", "Falso"],
+        "correct": 0
+      },
+      {
+        "text": "¿Cuál era el nombre de Angel Dust cuando era humano?",
+        "options": ["Mario", "Salvatore", "Anthony"],
+        "correct": 2
+      },
+      {
+        "text": "Angel Dust es su mejor amigo:",
+        "options": ["Cherri Bomb", "Charlie", "Niffty"],
+        "correct": 0
+      },
+      {
+        "text": "¿Cuál de los Vees nunca ha tenido relación directa con Angel Dust?",
+        "options": ["Valentino", "Velvette", "Vox"],
+        "correct": 1
+      }
+    ]
+  }
+]
