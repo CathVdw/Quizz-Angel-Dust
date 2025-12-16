@@ -392,15 +392,44 @@ document.addEventListener("DOMContentLoaded", function () {
     const total = questions.length;
     const successThreshold = Math.ceil(total * 0.6); // réussite à 60%
 
-    let title, message;
-
     if (score >= successThreshold) {
-      title = "🎉 Félicitations !";
-      message = `Bravo ! Vous avez réussi le quiz avec ${score}/${total} bonnes réponses.`;
+      switch (selectedLanguage) {
+        case "en":
+          title = "🎉 Congratulations!";
+          message = `Well done! You passed the quiz with ${score}/${total} correct answers.`;
+          break;
+        case "nl":
+          title = "🎉 Proficiat!";
+          message = `Goed gedaan! Je bent geslaagd met ${score}/${total} juiste antwoorden.`;
+          break;
+        case "sp":
+          title = "🎉 ¡Felicidades!";
+          message = `¡Muy bien! Has aprobado el cuestionario con ${score}/${total} respuestas correctas.`;
+          break;
+        default:
+          title = "🎉 Félicitations !";
+          message = `Bravo ! Vous avez réussi le quiz avec ${score}/${total} bonnes réponses.`;
+      }
     } else {
-      title = "😕 Dommage...";
-      message = `Vous avez obtenu ${score}/${total}. Retentez votre chance pour faire mieux !`;
+      switch (selectedLanguage) {
+        case "en":
+          title = "😕 Too bad...";
+          message = `You got ${score}/${total}. Try again to do better!`;
+          break;
+        case "nl":
+          title = "😕 Jammer...";
+          message = `Je behaalde ${score}/${total}. Probeer opnieuw om beter te doen!`;
+          break;
+        case "sp":
+          title = "😕 Qué lástima...";
+          message = `Has obtenido ${score}/${total}. ¡Inténtalo de nuevo para mejorar!`;
+          break;
+        default:
+          title = "😕 Dommage...";
+          message = `Vous avez obtenu ${score}/${total}. Retentez votre chance pour faire mieux !`;
+      }
     }
+
 
     // 2.2 Contenu HTML de la modale
     const modalContent = `
